@@ -1,6 +1,3 @@
-"
-This class will calculate how many units are left for a student to pass.
-"
 Class {
 	#name : 'MiageStudents',
 	#superclass : 'Object',
@@ -12,14 +9,23 @@ Class {
 }
 
 { #category : 'as yet unclassified' }
-MiageStudents >> passedunits: aninteger [
-	passed_units := aninteger 
-	
+MiageStudents >> passed_units: anInteger [
+	passed_units := anInteger 
 ]
 
 { #category : 'as yet unclassified' }
-MiageStudents >> remainunits [
+MiageStudents >> remain_units [
 	| remain_units |
-	remain_units:= 160 - passed_units.
+	remain_units := 160 -passed_units .
 	^ remain_units 
+]
+
+{ #category : 'as yet unclassified' }
+MiageStudents >> returnself [
+	^  self
+]
+
+{ #category : 'handling' }
+MiageStudents >> returnsuper [ 
+	^  super
 ]

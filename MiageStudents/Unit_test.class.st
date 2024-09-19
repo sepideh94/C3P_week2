@@ -1,6 +1,3 @@
-"
-test if the miagestudent calculate right or not.
-"
 Class {
 	#name : 'Unit_test',
 	#superclass : 'TestCase',
@@ -12,7 +9,7 @@ Class {
 Unit_test >> testRemainUnits [
 	| s1 |
 	s1:= MiageStudents new.
-	s1 passedunits: 40.
+	s1 passed_units: 40.
 	
-self assert: s1 remainunits equals: 160 - 40. 
+self assert: s1 remain_units equals: 160-40.
 ]
